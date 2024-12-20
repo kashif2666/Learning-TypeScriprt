@@ -12,18 +12,53 @@
 // kashif.city="Jamshedpur";
 // kashif.city="Hyderabad";
 
-// private not access outside the block
-class User {
-  readonly city: string = "Jamshedpur";
-  constructor(
-    public email: string,
-    public name: string,
-    private userId: string
-  ) {}
-}
+// private not access outside the block / class
+// class User {
+//   readonly city: string = "Jamshedpur";
+//   constructor(
+//     public email: string,
+//     public name: string,
+//     private userId: string
+//   ) {}
+//   private deleteToken() {
+//     console.log("Token Deleted");
+//   }
+// }
 
-const kashif = new User("k@gmail.com", "Kashif", "123422");
+// const kashif = new User("k@gmail.com", "Kashif", "123422");
 
-kashif.name = "Aman";
+// kashif.name = "Aman";
+// kashif.deleteToken();  error
+
+// getter and setter
+// class User {
+//   private _courseCount = 1;
+//   readonly city: string = "Jamshedpur";
+//   constructor(
+//     public email: string,
+//     public name: string
+//   ) // private userId: string
+//   {}
+
+//   get getAppleEmail(): string {
+//     return `apple ${this.email}`;
+//   }
+
+//   get courseCount(): number {
+//     return this._courseCount;
+//   }
+
+//   // no return type in settter
+//   set courseCount(courseNum) {
+//     if (courseNum <= 1) {
+//       throw new Error("Course count should be more than 1");
+//     }
+//     this._courseCount = courseNum;
+//   }
+// }
+
+// const kashif = new User("k@gmail.com", "Kashif", "123422");
+
+// kashif.name = "Aman";
 
 export {};
