@@ -48,7 +48,7 @@
 //     return this._courseCount;
 //   }
 
-//   // no return type in settter
+//   // no return type in settter not even void
 //   set courseCount(courseNum) {
 //     if (courseNum <= 1) {
 //       throw new Error("Course count should be more than 1");
@@ -60,5 +60,26 @@
 // const kashif = new User("k@gmail.com", "Kashif", "123422");
 
 // kashif.name = "Aman";
+
+// protected the rule is same as private but the only difference is that protected is accessed by inheritance class i.e., through extends class
+class User {
+  protected _courseCount = 1;
+  readonly city: string = "Jamshedpur";
+  constructor(
+    public email: string,
+    public name: string // private userId: string
+  ) {}
+}
+
+class SubUser extends User {
+  isFamily: boolean = true;
+  changeCourseCount() {
+    this._courseCount = 4;
+  }
+}
+
+const kashif = new User("k@gmail.com", "Kashif");
+
+kashif.name = "Aman";
 
 export {};
