@@ -14,7 +14,6 @@ const newUser:User2=[112,"k@gmail.com"];
 
 newUser[1]="a@gmail.com";
 
-newUser.push(true);
 
 console.log(newUser);
 
