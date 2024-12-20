@@ -8,7 +8,9 @@ function createUser({name:string,isPaid:boolean}){
 
 }
 
-createUser({name:"Kashif", isPaid:false})
+let newUser={name:"Kashif", isPaid:false, email:"Kashif@gmail.com"};
+
+createUser(newUser);
 
 function createCourse():{name:string,price:number}{
   return {name:"ReactJs", price:3000}

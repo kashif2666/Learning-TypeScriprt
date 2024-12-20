@@ -19,7 +19,7 @@ userId=87;
 let isLoggedIn:boolean=true;
 
 
-// any
+// any: turn off type checking
 let hero:string;
 
 function getHero(){

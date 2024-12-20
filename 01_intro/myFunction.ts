@@ -1,7 +1,5 @@
-function addTwo(num:number):number {
+function addTwo(num:number) {
   
-  // return num+2;
-  // return "Kashif"
    return num+2;
 }
 
